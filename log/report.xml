@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="20" skipped="0" failures="10" errors="0" time="4.526497" timestamp="2022-02-04T15:25:00-03:00" hostname="DESKTOP-RBKMO7B">
+<properties>
+<property name="seed" value="39122"/>
+</properties>
+<testcase classname="spec.testes_spec" name="Testes de Posts POST - Cadastrar um novo Post" file="./spec/testes_spec.rb" time="0.386846"></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts GET - Exibir todos os posts" file="./spec/testes_spec.rb" time="0.065623"></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts GET - Exibe um Post especifico referente ao ID" file="./spec/testes_spec.rb" time="0.064118"></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts GET - ID inválido" file="./spec/testes_spec.rb" time="0.075612"></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts GET - ID inexistente" file="./spec/testes_spec.rb" time="0.065791"></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts GET - Exibe Comments de um determinado ID" file="./spec/testes_spec.rb" time="0.063983"></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts GET - Comments com postId inválido" file="./spec/testes_spec.rb" time="0.121566"><failure message="
+expected: &quot;404&quot;
+     got: &quot;200&quot;
+
+(compared using eql?)
+" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(result.response.code).to eql &quot;404&quot;
+
+  expected: &quot;404&quot;
+       got: &quot;200&quot;
+
+  (compared using eql?)
+./spec/testes_spec.rb:53:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts GET - Comments com postId inexistente" file="./spec/testes_spec.rb" time="0.097455"><failure message="
+expected: &quot;404&quot;
+     got: &quot;200&quot;
+
+(compared using eql?)
+" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(result.response.code).to eql &quot;404&quot;
+
+  expected: &quot;404&quot;
+       got: &quot;200&quot;
+
+  (compared using eql?)
+./spec/testes_spec.rb:60:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts GET - Exibe Comments de um determinado postId" file="./spec/testes_spec.rb" time="0.055018"></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts GET - Comments com postId inválido" file="./spec/testes_spec.rb" time="0.065029"><failure message="
+expected: &quot;404&quot;
+     got: &quot;200&quot;
+
+(compared using eql?)
+" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(result.response.code).to eql &quot;404&quot;
+
+  expected: &quot;404&quot;
+       got: &quot;200&quot;
+
+  (compared using eql?)
+./spec/testes_spec.rb:75:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts GET - Comments com postId inexistente" file="./spec/testes_spec.rb" time="0.079493"><failure message="
+expected: &quot;404&quot;
+     got: &quot;200&quot;
+
+(compared using eql?)
+" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(result.response.code).to eql &quot;404&quot;
+
+  expected: &quot;404&quot;
+       got: &quot;200&quot;
+
+  (compared using eql?)
+./spec/testes_spec.rb:82:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts PUT - Exibe o ID inserido no endpoint" file="./spec/testes_spec.rb" time="0.346996"></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts PUT - com ID inexistente inserido no endpoint" file="./spec/testes_spec.rb" time="0.314747"><failure message="
+expected: &quot;404&quot;
+     got: &quot;500&quot;
+
+(compared using eql?)
+" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(result.response.code).to eql &quot;404&quot;
+
+  expected: &quot;404&quot;
+       got: &quot;500&quot;
+
+  (compared using eql?)
+./spec/testes_spec.rb:97:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts PUT - com ID inválido inserido no endpoint" file="./spec/testes_spec.rb" time="0.336070"><failure message="
+expected: &quot;404&quot;
+     got: &quot;500&quot;
+
+(compared using eql?)
+" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(result.response.code).to eql &quot;404&quot;
+
+  expected: &quot;404&quot;
+       got: &quot;500&quot;
+
+  (compared using eql?)
+./spec/testes_spec.rb:104:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts PATCH - Exibe o post referente ao ID inserido no endpoint" file="./spec/testes_spec.rb" time="0.327825"></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts PATCH - com ID inexistente inserido no endpoint" file="./spec/testes_spec.rb" time="0.297259"><failure message="
+expected: &quot;404&quot;
+     got: &quot;200&quot;
+
+(compared using eql?)
+" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(result.response.code).to eql &quot;404&quot;
+
+  expected: &quot;404&quot;
+       got: &quot;200&quot;
+
+  (compared using eql?)
+./spec/testes_spec.rb:118:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts PATCH - com ID inválido inserido no endpoint" file="./spec/testes_spec.rb" time="0.337597"><failure message="
+expected: &quot;404&quot;
+     got: &quot;200&quot;
+
+(compared using eql?)
+" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(result.response.code).to eql &quot;404&quot;
+
+  expected: &quot;404&quot;
+       got: &quot;200&quot;
+
+  (compared using eql?)
+./spec/testes_spec.rb:125:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts DELETE - Deletar determinado post pelo seu ID" file="./spec/testes_spec.rb" time="0.311383"></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts DELETE - com ID inexistente inserido no endpoint" file="./spec/testes_spec.rb" time="0.324195"><failure message="
+expected: &quot;404&quot;
+     got: &quot;200&quot;
+
+(compared using eql?)
+" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(result.response.code).to eql &quot;404&quot;
+
+  expected: &quot;404&quot;
+       got: &quot;200&quot;
+
+  (compared using eql?)
+./spec/testes_spec.rb:139:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.testes_spec" name="Testes de Posts DELETE - com ID inválido inserido no endpoint" file="./spec/testes_spec.rb" time="0.368625"><failure message="
+expected: &quot;404&quot;
+     got: &quot;200&quot;
+
+(compared using eql?)
+" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(result.response.code).to eql &quot;404&quot;
+
+  expected: &quot;404&quot;
+       got: &quot;200&quot;
+
+  (compared using eql?)
+./spec/testes_spec.rb:146:in `block (2 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+</testsuite>
